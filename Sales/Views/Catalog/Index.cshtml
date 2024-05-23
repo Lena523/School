@@ -1,0 +1,137 @@
+﻿@using Sales.Data.Models
+@using Sales.Models.Catalog
+@model IEnumerable<Sales.Data.Models.Product>
+
+@{
+    ViewData["Title"] = "Каталог товаров";
+}
+
+@{
+    List<MenuItemModel> categories = new List<MenuItemModel>();
+
+    if (ViewData["Categories"] != null)
+    {
+        categories = (List<MenuItemModel>)ViewData["Categories"];
+    }
+}
+
+@section SideBar{
+    <aside class="col-sm-2 m-0 p-0 border-1">
+        <div class="p-3 h-100">
+
+            @if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+            {
+                <p>
+                    <a asp-action="Create" asp-controller="Category" class="btn btn-success w-100">Новая категория</a>
+                </p>
+            }
+            <ul class="nav nav-pills flex-sm-column mb-auto justify-content-between">
+
+            @foreach (var category in categories)
+                {
+                    <li class="nav-item">
+                        <div class="row">
+
+                            @{
+                                var column = "col-12";
+                            }
+                            @if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+                            {
+                                column = "col-8";
+
+                                if(category.Name == "Все")
+                                {
+                                    column = "col-12";
+                                }
+                            }
+
+                            @if (category.Id == 0)
+                            {
+                                string? cat = null;
+                                <div class="@column">
+                                <a asp-controller="Catalog" asp-route-id="@cat" class="nav-link px-2 @category.Active">
+                                        <span>@category.Name</span>
+                                    </a>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="@column">
+                                    <a asp-controller="Catalog" asp-route-id="@category.Id" class="nav-link px-2 @category.Active">
+                                        <span>@category.Name</span>
+                                    </a>
+                                </div>
+                            }
+
+                            @if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+                            {
+                                @if (category.Name != "Все"){
+                                    <div class="col-2 p-0">
+                                        <a asp-action="Edit" asp-controller="Category" asp-route-id="@category.Id" title="Редактировать категорию" class="px-2 btn btn-default text-light"><i class="fa-solid fa-pen-to-square"></i></a>
+                                    </div>
+                                    <div class="col-2 p-0">
+                                        <a asp-action="Delete" asp-controller="Category" asp-route-id="@category.Id" title="Удалить категорию" class="px-2 btn btn-default text-danger"><i class="fa-solid fa-square-minus"></i></a>
+                                    </div>
+                                    }
+                            }
+                        </div>
+                </li>
+                }
+            </ul>
+        </div>
+    </aside>
+}
+
+
+<div class="container-fliud">
+    @if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+    {
+        <div class="mt-3">
+        <a asp-action="Create" asp-controller="Product" class="btn btn-success">Добавить товар</a>
+        </div>
+    }
+    <div class="row mt-2">
+
+    @foreach (var item in Model)
+        {
+            <div class="col-md-3 p-2">
+            <div class="card">
+                @if (item.Image != null)
+                {
+                    var path = System.IO.Path.Combine("~/img", item.Image);
+                    <img src="@Url.Content(@path)" class="card-img-top" style="height:250px;" alt="...">
+                }
+                else
+                {
+                    <img src="~/img/placeholder.png" style="height:250px;" class="card-img-top" alt="...">
+                }
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <div class="card-text">
+                        <span class="text-muted">Ширина: @Math.Round(@item.Width, 2)</span><br />
+                        <span class ="text-muted">Длина: @Math.Round(@item.Length, 2)</span><br />
+                        <span class ="text-muted">Толщина: @Math.Round(@item.Thickness, 2)</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <span class="text-black">Цена: @Math.Round(@item.Price, 2) BYN</span>
+                </div>
+                <div class="card-body">
+                    @{
+                        // Получение текущего адреса
+                        var request = ViewContext.HttpContext.Request;
+                        var returnUrl = request.Path +
+                        request.QueryString.ToUriComponent();
+                    }
+                    <a asp-action="Add" asp-controller="Cart" asp-route-id="@item.Id" asp-route-returnUrl="@returnUrl" class="btn btn-success" title="Добавить товар в корзину"><i class="fa-solid fa-basket-shopping"></i></a>
+                    @if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+                    {
+                        <a asp-action="Edit" asp-controller="Product" asp-route-id="@item.Id" title="Редактировать товар" class="px-2 btn btn-secondary"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a asp-action="Delete" asp-controller="Product" asp-route-id="@item.Id" title="Удалить товар" class="px-2 btn btn-danger"><i class="fa-solid fa-square-minus"></i></a>
+                    }
+                </div>
+            </div>
+            </div>
+        }
+    </div>
+</div>

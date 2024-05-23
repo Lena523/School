@@ -1,0 +1,54 @@
+﻿@page
+@model ListAddressModel
+@{
+    ViewData["Title"] = "Управление адресами";
+    ViewData["ActivePage"] = ManageNavPages.Address;
+}
+
+<h4>@ViewData["Title"]</h4>
+<partial name="_StatusMessage" for="StatusMessage" />
+
+<div class="row">
+    <div class="col-md-8">
+    <form id="address" method="post">
+        <div class="form-floating mb-3">
+            <input asp-for="Address" class="form-control" autocomplete="email" aria-required="true" placeholder="Пожайлуйста, введите адрес" />
+            <label asp-for="Address" class="form-label"></label>
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+        <button id="add-address-button" type="submit" class="w-100 btn btn-lg btn-success">Добавить адрес</button>
+    </form>
+    </div>  
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <table id="addresses" class="table table-responsive" style="max-height: 200px;">
+            <thead>
+                <tr>
+                    <th>
+                        Адрес
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Addresses)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Address)
+                        </td>
+                        <td>
+                            <a asp-area="Identity" asp-page="EditAddress" asp-route-id="@item.Id" class="btn btn-sm btn-primary"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a asp-page-handler="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger"><i class="fa-solid fa-square-minus"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

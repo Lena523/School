@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300..700&family=Montserrat:wght@100..900&family=Playfair+Display+SC:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="css/main4.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <section class=container-first>
+        <header>
+         <nav class="menu center">
+            <ul>
+             <li><a href="index.html" title="school" target="_blank">О школе</a></li>
+             <li><a href="index.html#masters" title="masters" target="_blank">Наши мастера</a></li>
+             <li><a href="index2.html" title="service" target="_blank" class="btn-more">Услуги<span>&plus;</span></a></li>
+             <li><a href="#" title="timetable" target="_blank">Расписание</a></li>
+             <li><a href="#" title="useful" target="_blank">Полезное</a></li>
+             <li><a href="index.html#contacts" title="contacts" target="_blank">Контакты</a></li>
+             <li><a href="#" title="currency" target="_blank">Грн <img src="imgIndex1/arr1.svg" alt="arrow"></a></li>
+             <li class="close" id="close-btn">X</li>
+            </ul>
+         </nav>
+         <div class="registration">
+            <form method="post" action="enter">
+                <div class="title">
+                    <div><label>ВХОД В ЛИЧНЫЙ КАБИНЕТ</label></div>
+                    <div class="cross"><img src="imgIndex1/cross.svg" alt="cross"></div>
+                </div>
+                <div class="mail">
+                    <label>ваш e-mail<input type="email" name="mail" value=" "></label>
+                </div>
+                <div class="parole">
+                    <label>ваш пароль<input type="password" name="pass" value=""></label>
+                </div>
+                <div class="enter">
+                    <div><img src="imgIndex1/remind.svg" alt="remind"></div>
+                    <div><a href="index3.html"><img src="imgIndex1/enter.svg" alt="enter"></a></div>
+                </div>
+                <div class="get-registed"><a href="index4.html"><img src="imgIndex1/get-registed.svg" alt="get-registed"></a></div>
+            </form>
+            <p>Войти как пользователь</p>
+            <div class="button-set">
+                <div class="button-left">
+                    <img src="imgIndex1/button-left.svg" alt="button-left">
+                    <img src="imgIndex1/path-f.svg" alt="facebook">
+                </div>
+                <div class="button-right">
+                    <img src="imgIndex1/button-right.svg" alt="button-right">
+                    <img src="imgIndex1/path-g.svg" alt="google">
+                </div>
+            </div>
+         </div>
+         <div class="right-side center">
+            <div class="burger">
+                <a href="#" title="menu"><img src="imgIndex1/burg.svg" alt="burger"></a>
+            </div>
+            <div class="search">
+                <a href="#" class="circle" title="search" target="_blank"><img src="imgIndex1/search.svg" alt="search"></a>
+            </div>
+            <div class="heart">
+                <a href="#" class="circle" title="my-likes" target="_blank"><img src="imgIndex1/heart.svg" alt="heart"></a>
+            </div>
+            <div class="person">
+                <a href="#" class="circle" title="profile"><img src="imgIndex1/person.svg" alt="person"></a>
+            </div>
+            <div class="cart">
+                <a href="#" class="circle" title="orders" target="_blank"><img src="imgIndex1/cart.svg" alt="cart"></a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+         <div class="logo">
+            <div class="border"></div>
+            <div><img src="imgIndex1/main4.svg" alt="logo" title="main-picture"></div>
+            <div class="border"></div>
+         </div>
+        </header>
+        <div class="head-content">
+            <h1>Регистрация нового пользователя</h1>
+        </div>
+    </section>
+    <section class="main-part">
+        <div class="my-data">
+            <div class="left">
+                <form method="post" action="get-info.php">
+                  <fieldset>
+                    <legend>личные даные</legend>
+                    <label class="name">имя<br>
+                      <input class="icon" type="text" name="name" value="" placeholder="">
+                    </label>
+                    <div class="sex">Пол<br>
+                      <input class="one" type="radio" name="answer" value="1" checked><span class="one">женский</span>
+                      <input class="two" type="radio" name="answer" value="2"><span>мужской</span>
+                    </div>
+                    <label class="surname">фамилия<br>
+                      <input class="icon" type="text" name="surname" value="">
+                    </label>
+                    <label class="mail">e-mail<br>
+                      <input class="icon" type="email" name="mail" value="">
+                    </label>
+                    <label class="birth">дата рождения<br>
+                      <input class="icon" type="text" name="birth" value="">
+                    </label>
+                    <label  class="phone">телефон<br>
+                      <input class="icon" type="tel" name="tel" value="">
+                    </label>
+                    <label class="telegram">telegram<br>
+                      <input class="icon" type="search" name="teleg" value="">
+                    </label>
+                  </fieldset>
+                </form>
+            </div>
+              <div class="right">
+                <form method="post" action="get-info.php">
+                  <fieldset>
+                    <legend>пароль</legend>
+                    <div class="new-parole">
+                    <label>пароль<br>
+                      <input class="icon" type="password" name="pass" value="">
+                    </label>
+                  </div>
+                  <div class="repeat-parole">
+                    <label>повторить пароль<br>
+                      <input class="icon1" type="password" name="pass" value="">
+                    </label>
+                  </div>
+                  </fieldset>
+                  <button type="submit" class="keep">
+                    <img src="imgIndex4/get-reg.svg" alt="store">
+                    <img src="imgIndex4/figure.svg" alt="figure">
+                  </button>
+                </form>
+              </div>
+          </div>
+        </section>
+        <footer>
+          <div class="logo">
+              <div class="border"></div>
+              <div id="my-id"><img src="imgIndex1/logo2.svg" alt="logo"></div>
+              <div class="border"></div>
+           </div>
+           <div class="vertical-border"></div>
+           <div class="summary center">
+              <div class="left-part">
+                  <div><a href="#" title="policy" target="_blank">Политика конфиденциальности</a></div>
+                  <div><img src="imgIndex1/romb.svg" alt="romb"></div>
+                  <div><a href="#" title="contract" target="_blank">Договор оферты</a></div>
+              </div>
+              <div class="central-part">
+                  <div><a href="#" title="facebook" target="_blank"><img src="imgIndex1/facebook.svg" alt="facebook" title="facebook"></a></div>
+                  <div><a href="#" title="soc-link" target="_blank"><img src="imgIndex1/soc.svg" alt="social" title="soc-link"></a></div>
+                  <div><a href="youtube" title="youtube" target="_blank"><img src="imgIndex1/youtube.svg" alt="youtube" title="youtube"></a></div>
+              </div>
+              <div class="right-part">
+                  <div>by<img src="imgIndex1/smelo.svg" alt="smelo"></div>
+                  <div><img src="imgIndex1/romb.svg" alt="romb"></div>
+                  <div>Circle of White ©2021 All Rights Reserved</div>
+              </div>
+           </div>
+      </footer>   
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

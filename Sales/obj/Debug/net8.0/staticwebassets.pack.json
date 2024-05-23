@@ -1,0 +1,621 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Sales.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Sales.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\css\\main1.css",
+      "PackagePath": "staticwebassets\\css\\main1.css"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\css\\main2.css",
+      "PackagePath": "staticwebassets\\css\\main2.css"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\css\\main3.css",
+      "PackagePath": "staticwebassets\\css\\main3.css"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\css\\main4.css",
+      "PackagePath": "staticwebassets\\css\\main4.css"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\+.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\+.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\-.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\-.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\Vector.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\Vector.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\arr1.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\arr1.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\back.png",
+      "PackagePath": "staticwebassets\\imgIndex1\\back.png"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\bigCart.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\bigCart.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\burg.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\burg.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\button-left.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\button-left.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\button-right.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\button-right.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\button.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\button.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\cart.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\cart.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\circle.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\circle.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\cross.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\cross.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\details.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\details.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\details2.png",
+      "PackagePath": "staticwebassets\\imgIndex1\\details2.png"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\drop1.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\drop1.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\drop2.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\drop2.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\enter.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\enter.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\facebook.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\facebook.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\get-registed.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\get-registed.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\heart.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\heart.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\logo2.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\logo2.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\magic0.jpg",
+      "PackagePath": "staticwebassets\\imgIndex1\\magic0.jpg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\magic1.jpg",
+      "PackagePath": "staticwebassets\\imgIndex1\\magic1.jpg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\magic2.jpg",
+      "PackagePath": "staticwebassets\\imgIndex1\\magic2.jpg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\magic3.jpg",
+      "PackagePath": "staticwebassets\\imgIndex1\\magic3.jpg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\magic4.jpg",
+      "PackagePath": "staticwebassets\\imgIndex1\\magic4.jpg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\magic5.jpg",
+      "PackagePath": "staticwebassets\\imgIndex1\\magic5.jpg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\main-pic.png",
+      "PackagePath": "staticwebassets\\imgIndex1\\main-pic.png"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\main4.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\main4.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\master1.jpg",
+      "PackagePath": "staticwebassets\\imgIndex1\\master1.jpg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\master2.jpg",
+      "PackagePath": "staticwebassets\\imgIndex1\\master2.jpg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\minuss.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\minuss.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\mob-arr-left.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\mob-arr-left.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\mob-arr-right.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\mob-arr-right.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\part1.png",
+      "PackagePath": "staticwebassets\\imgIndex1\\part1.png"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\part2.png",
+      "PackagePath": "staticwebassets\\imgIndex1\\part2.png"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\part3.png",
+      "PackagePath": "staticwebassets\\imgIndex1\\part3.png"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\path-f.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\path-f.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\path-g.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\path-g.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\person.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\person.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\pluss.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\pluss.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\reg-icon.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\reg-icon.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\remind.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\remind.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\romb.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\romb.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\round1-copy.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\round1-copy.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\round1.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\round1.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\scale-arr-left.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\scale-arr-left.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\scale-arr-right.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\scale-arr-right.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\scroll1.png",
+      "PackagePath": "staticwebassets\\imgIndex1\\scroll1.png"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\search.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\search.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\send.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\send.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\smelo.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\smelo.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\snow-girl.png",
+      "PackagePath": "staticwebassets\\imgIndex1\\snow-girl.png"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\soc.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\soc.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\stroke.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\stroke.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\titan-cut.png",
+      "PackagePath": "staticwebassets\\imgIndex1\\titan-cut.png"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\vector2.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\vector2.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\waves.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\waves.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex1\\youtube.svg",
+      "PackagePath": "staticwebassets\\imgIndex1\\youtube.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\BRomb.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\BRomb.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\ar-left.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\ar-left.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\ar-right.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\ar-right.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\arr-right.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\arr-right.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\big-circle.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\big-circle.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\book1.png",
+      "PackagePath": "staticwebassets\\imgIndex2\\book1.png"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\book2.png",
+      "PackagePath": "staticwebassets\\imgIndex2\\book2.png"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\book3.png",
+      "PackagePath": "staticwebassets\\imgIndex2\\book3.png"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\chakra.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\chakra.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\circle2.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\circle2.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\girl.mp4",
+      "PackagePath": "staticwebassets\\imgIndex2\\girl.mp4"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\list-romb.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\list-romb.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\mini-cart.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\mini-cart.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\pic1.png",
+      "PackagePath": "staticwebassets\\imgIndex2\\pic1.png"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\pic3.png",
+      "PackagePath": "staticwebassets\\imgIndex2\\pic3.png"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\read-more.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\read-more.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\read-more2.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\read-more2.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\rombic.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\rombic.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\small-cart.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\small-cart.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\small-cart2.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\small-cart2.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\small-heart.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\small-heart.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\small-heart2.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\small-heart2.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\talisman.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\talisman.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\taro-cards.jpg",
+      "PackagePath": "staticwebassets\\imgIndex2\\taro-cards.jpg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\taro1.jpg",
+      "PackagePath": "staticwebassets\\imgIndex2\\taro1.jpg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\taro2.jpg",
+      "PackagePath": "staticwebassets\\imgIndex2\\taro2.jpg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\taro3.jpg",
+      "PackagePath": "staticwebassets\\imgIndex2\\taro3.jpg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\traingle.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\traingle.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\triangle2.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\triangle2.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\vec.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\vec.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\video-pic.jpg",
+      "PackagePath": "staticwebassets\\imgIndex2\\video-pic.jpg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\water.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\water.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\wave-purple.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\wave-purple.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\wave2.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\wave2.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex2\\way.svg",
+      "PackagePath": "staticwebassets\\imgIndex2\\way.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\arr-down.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\arr-down.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\arr1.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\arr1.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\burg.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\burg.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\bw-center.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\bw-center.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\bw.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\bw.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\cart.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\cart.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\eye.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\eye.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\eye2.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\eye2.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\hat.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\hat.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\heart.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\heart.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\main5.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\main5.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\only-arrow.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\only-arrow.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\out.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\out.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\pen.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\pen.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\person.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\person.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\radio.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\radio.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\romb-ic.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\romb-ic.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\search.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\search.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\slash.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\slash.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\stars.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\stars.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex3\\store1.svg",
+      "PackagePath": "staticwebassets\\imgIndex3\\store1.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex4\\figure.svg",
+      "PackagePath": "staticwebassets\\imgIndex4\\figure.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\imgIndex4\\get-reg.svg",
+      "PackagePath": "staticwebassets\\imgIndex4\\get-reg.svg"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\index2.html",
+      "PackagePath": "staticwebassets\\index2.html"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\index3.html",
+      "PackagePath": "staticwebassets\\index3.html"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\index4.html",
+      "PackagePath": "staticwebassets\\index4.html"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\js\\wow.js",
+      "PackagePath": "staticwebassets\\js\\wow.js"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\main.js",
+      "PackagePath": "staticwebassets\\lib\\main.js"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\lib\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\lib\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\lib\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\script.js",
+      "PackagePath": "staticwebassets\\lib\\script.js"
+    },
+    {
+      "Id": "D:\\ДКР и курсовая колледж\\Sales-v2\\Sales\\Sales\\wwwroot\\lib\\wow.js",
+      "PackagePath": "staticwebassets\\lib\\wow.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Sales.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Sales.props",
+      "PackagePath": "build\\Sales.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Sales.props",
+      "PackagePath": "buildMultiTargeting\\Sales.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Sales.props",
+      "PackagePath": "buildTransitive\\Sales.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

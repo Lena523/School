@@ -1,0 +1,138 @@
+﻿@model Sales.Data.Models.Order
+
+@{
+    ViewData["Title"] = "Заказ";
+}
+
+<div class="row mt-5">
+    <h3>Данные о заказе с ID @Model.Id</h3>
+</div>
+<div class="row">
+    <dl class="row mt-2">
+        <dt class="col-sm-2 mt-2">
+            @Html.DisplayNameFor(model => model.Customer)
+        </dt>
+        <dd class = "col-sm-10 mt-2">
+            @Html.DisplayFor(model => model.Customer.Email)
+        </dd>
+        <dt class="col-sm-2">
+            Номер телефона
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Customer.PhoneNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt class="col-sm-2 mt-3">
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+        <dd class="col-sm-10 mt-3">
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Employee)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Employee.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AcceptedDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AcceptedDate)
+        </dd>
+        <dt class="col-sm-2">
+            Состояние заказ
+        </dt>
+        <dd class="col-sm-10">
+            @{
+                var status = string.Empty;
+            }
+
+            @if (Model.IsClosed)
+            {
+                status = "Обработан";
+            }
+            else
+            {
+                @if (!Model.EmployeeId.HasValue)
+                {
+                    status = "Сформирован";
+                }
+                else
+                {
+                    status = "В работе";
+                }
+            }
+            @status
+        </dd>
+    </dl>
+</div>
+<div clas="row">
+    <h4>Список товаров в заказе</h4>
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>
+                   Наименование товара
+                </th>
+                <th>
+                    Длина
+                </th>
+                <th>
+                    Ширина
+                </th>
+                <th>
+                    Толщина
+                </th>
+                <th>
+                   Цена за штуку (BYN)
+                </th>
+                <th>
+                    Кол-во
+                </th>
+                <th>
+                    Цена позиции (BYN)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderedProducts)
+            {
+                <tr>
+                    <td>
+                        @item.Product.Name
+                    </td>
+                    <td>
+                        @Math.Round(item.Product.Length, 2)
+                    </td>
+                    <td>
+                        @Math.Round(item.Product.Width, 2)
+                    </td>
+                    <td>
+                        @Math.Round(item.Product.Thickness, 2)
+                    </td>
+                    <td>
+                        @item.Product.Price
+                    </td>
+                    <td>
+                        @item.Quantity
+                    </td>
+                    <td>
+                        @{
+                            var summ = item.Product.Price * item.Quantity;
+                        }
+                        @summ
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div clas="row mt-5">
+    <a asp-action="Index" class="btn btn-dark" >Назад</a>
+</div>

@@ -1,0 +1,237 @@
+﻿@page
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300..700&family=Montserrat:wght@100..900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="../css/main3.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <section class="container-first">
+      <header>
+       <nav class="menu center">
+          <ul>
+           <li><a href="index.html" title="school" target="_blank">О школе</a></li>
+           <li><a href="index.html#masters" title="masters" target="_blank">Наши мастера</a></li>
+           <li><a href="index2.html" title="services" target="_blank" class="btn-more">Услуги<span>&plus;</span></a></li>
+           <li><a href="#" title="timetable" target="_blank">Расписание</a></li>
+           <li><a href="#" title="useful" target="_blank">Полезное</a></li>
+           <li><a href="index.html#contacts" title="contacts" target="_blank">Контакты</a></li>
+           <li><a href="#" title="currency" target="_blank">Грн <img src="../imgIndex3/arr1.svg" alt="arrow"></a></li>
+           <li class="close" id="close-btn">X</li>
+          </ul>
+       </nav>
+       <div class="right-side center">
+          <div class="burger">
+              <a href="#" title="menu" class="circle"><img src="../imgIndex3/burg.svg" alt="burger"></a>
+          </div>
+          <div class="search">
+              <a href="#" title="search" target="_blank" class="circle"><img src="../imgIndex3/search.svg" alt="search"></a>
+          </div>
+          <div class="heart">
+              <a href="#" title="my-likes" target="_blank" class="circle"><img src="../imgIndex3/heart.svg" alt="heart"></a>
+          </div>
+          <div class="person">
+              <a href="#" title="my-account" target="_blank" class="circle"><img src="../imgIndex3/person.svg" alt="person"></a>
+          </div>
+          <div class="cart">
+              <a href="#" title="order" target="_blank" class="circle"><img src="../imgIndex3/cart.svg" alt="cart"></a>
+          </div>
+      </div>
+      <div class="clearfix"></div>
+       <div class="logo">
+          <div class="border"></div>
+          <div><img src="../imgIndex3/main5.svg" alt="logo"></div>
+          <div class="border"></div>
+       </div>
+      </header>
+      <div class="header-content center">
+        <div class="left-content">
+                    <div><h6>Здравствуй, @ViewBag.Name</h6></div>
+          <div><img src="../imgIndex3/stars.svg" alt="stars"></div>
+        </div>
+        <div class="right-top-content">
+          <div class="out">
+            <div>выход</div>
+            <div>
+                            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                                <button type="submit" class="nav-link btn btn-link text-dark"><img src="../imgIndex3/out.svg" alt="out"</input></button>
+                            </form>
+                        </div>
+          </div>
+        </div>
+        <div class="right-bottom-content">
+          <div class="learn">
+            <div>перейти к обучению</div>
+            <div><img src="../imgIndex3/hat.svg" alt="hat"></div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <section class="my-page">
+      <div class="pages">
+        <div class="left">
+          <div class="account">
+            <div><img src="../imgIndex3/romb-ic.svg" alt="romb"></div>
+            <div><h6>Настройки аккаунта</h6></div>
+          </div>
+          <p class="one">Заказы</p>
+          <p class="two">Список желаний (3)</p>
+        </div>
+        <div class="right-top">
+          <form method="post" >
+            <fieldset>
+              <legend>МОЯ иНФОРМАЦиЯ</legend>
+              <label class="name">имя<br>
+                                <input class="icon" type="text" name="name" value="@ViewBag.Name" placeholder="">
+              </label>
+              <div class="sex">Пол<br>
+
+                                <input class="one" type="radio" name="answer" value="Female" @(ViewBag.Gender == "Female" ? "checked": "")>
+                                    <span class="one">женский</span>
+                <input class="two" type="radio" name="answer" value="Male"><span>мужской</span>
+              </div>
+              <label class="surname">фамилия<br>
+                                <input class="icon" type="text" name="surname" value="@ViewBag.Surname">
+              </label>
+              <label class="mail">e-mail<br>
+                                <input class="icon" type="email" name="mail" value="@User.Identity.Name">
+              </label>
+              <label class="birth">дата рождения<br>
+                                <input class="icon" type="text" name="birth" value="@ViewBag.Birthdate">
+              </label>
+              <label  class="phone">телефон<br>
+                                <input class="icon" type="tel" name="tel" value="@ViewBag.Phone">
+              </label>
+              <label class="telegram">telegram<br>
+                                <input class="icon" type="search" name="teleg" value="@ViewBag.Telegram">
+              </label>
+            </fieldset>
+          </form>
+          <button type="submit" class="store"><img src="../imgIndex3/store1.svg" alt="store">
+          </button>
+        </div>
+        <div class="right-middle">
+          <form method="post" action="get-info.php">
+              <fieldset class="part-top">
+              <legend>МОя адресная книга</legend>
+              <label class="address">адрес доставки (по умолчанию)<br>
+              <select name="my-address" >
+                <option>Киев, ул. Семьи Сосниных 3, кв. 420</option>
+              </select>
+              <img src="../imgIndex3/arr-down.svg" alt="arrow-down">
+              </label>
+              <div class="button">
+              <button class="new-address">добавить новый адрес</button>
+              <img src="../imgIndex3/only-arrow.svg" alt="arrow">
+            </div>
+            </fieldset>
+            <div class="location">
+              <label class="address-2">адрес 1<br></label>
+              <label class="address-2">адрес 1<br></label>
+            </div>
+              <fieldset class="part-bottom">
+              <div class="city">
+                <label class="city1">город<br></label>
+                <input class="icon" type="text" name="city" value=""> 
+              </div>
+              <div class="city">
+                <label class="city1">город<br></label> 
+                <input class="icon" type="text" name="city" value="">
+              </div>
+              <div class="street">
+                <label class="street1">улица<br></label>
+                <input class="icon" type="text" name="street" value="">
+              </div>
+              <div class="street">
+                <label class="street1">улица<br></label>
+                  <input class="icon" type="text" name="street" value="">
+              </div>
+                <div class="house-flat">
+                  <label class="house1">дом<br>
+                  <input class="icon" type="text" name="house" value="">
+                  </label><br>
+                  <label class="flat1">квартира<br>
+                    <input class="icon" type="text" name="flat" value="">
+                    </label>
+                </div>
+                <div class="house-flat">
+                  <label class="house1">дом<br>
+                  <input class="icon" type="text" name="house" value="">
+                  </label><br>
+                  <label class="flat1">квартира<br>
+                    <input class="icon" type="text" name="flat" value="">
+                    </label>
+                </div>
+                <div class="address"></div>
+                  <button type="submit" class="keep"><img src="../imgIndex3/store1.svg" alt="store"></button>
+            </fieldset>
+            <div class="img1"><img src="../imgIndex3/bw.svg" alt="person">
+              <img src="../imgIndex3/bw-center.svg" alt="center">
+            </div>
+              <div class="img2"><img src="../imgIndex3/bw.svg" alt="person">
+                <img src="../imgIndex3/bw-center.svg" alt="center">
+              </div>
+          </form>
+        </div>
+        <div class="right-bottom">
+          <form method="post" action="get-info.php">
+            <fieldset>
+              <legend>изменить пароль</legend>
+              <div class="old-parole">
+                <label>старый пароль<br>
+                  <input type="password" name="pass" value="">
+                </label>
+              </div>
+              <div class="new-parole">
+              <label>новый пароль<br>
+                <input class="icon" type="password" name="pass" value="">
+              </label>
+            </div>
+            <div class="repeat-parole">
+              <label>повторить пароль<br>
+                <input class="icon1" type="password" name="pass" value="">
+              </label>
+            </div>
+            </fieldset>
+            <button type="submit" class="keep"><img src="../imgIndex3/store1.svg" alt="store"></button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="logo">
+          <div class="border"></div>
+          <div id="my-id"><img src="../imgIndex1/logo2.svg" alt="logo"></div>
+          <div class="border"></div>
+       </div>
+       <div class="vertical-border"></div>
+       <div class="summary center">
+          <div class="left-part">
+              <div><a href="#" title="policy" target="_blank">Политика конфиденциальности</a></div>
+              <div><img src="../imgIndex1/romb.svg" alt="romb"></div>
+              <div><a href="#" title="contract" target="_blank">Договор оферты</a></div>
+          </div>
+          <div class="central-part">
+              <div><a href="#" title="facebook" target="_blank"><img src="../imgIndex1/facebook.svg" alt="facebook" title="facebook"></a></div>
+              <div><a href="#" title="soc-link" target="_blank"><img src="../imgIndex1/soc.svg" alt="social" title="soc-link"></a></div>
+              <div><a href="youtube" title="youtube" target="_blank"><img src="../imgIndex1/youtube.svg" alt="youtube" title="youtube"></a></div>
+          </div>
+          <div class="right-part">
+              <div>by<img src="../imgIndex1/smelo.svg" alt="smelo"></div>
+              <div><img src="../imgIndex1/romb.svg" alt="romb"></div>
+              <div>Circle of White ©2021 All Rights Reserved</div>
+          </div>
+       </div>
+  </footer>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>

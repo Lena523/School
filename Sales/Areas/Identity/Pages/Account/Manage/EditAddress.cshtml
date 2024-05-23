@@ -1,0 +1,27 @@
+﻿@page "{id:int}"
+@model EditAddressModel
+@{
+    ViewData["Title"] = "Управление адресами";
+    ViewData["ActivePage"] = ManageNavPages.Address;
+}
+
+<h4>@ViewData["Title"]</h4>
+<partial name="_StatusMessage" for="StatusMessage" />
+
+<div class="row">
+    <div class="col-md-8">
+    <form id="address" method="post">
+            <input asp-for="Id" hidden />
+        <div class="form-floating mb-3">
+            <input asp-for="Address" class="form-control" autocomplete="email" aria-required="true" placeholder="Пожайлуйста, введите адрес" />
+            <label asp-for="Address" class="form-label"></label>
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+        <button id="add-address-button" type="submit" class="w-100 btn btn-lg btn-success">Изменить адрес</button>
+    </form>
+    </div>  
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

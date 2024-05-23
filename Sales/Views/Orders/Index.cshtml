@@ -1,0 +1,131 @@
+﻿@model IEnumerable<Sales.Data.Models.Order>
+
+@{
+    ViewData["Title"] = "Заказы";
+}
+
+<div class="row mt-5">
+    <h2>Заказы</h2>
+</div>
+<div class="row mt-2">
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>
+                    ID заказа
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Customer)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CreatedDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Employee)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AcceptedDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Address)
+                </th>
+                <th>
+                    Кол-во товаров в заказе
+                </th>
+                <th>
+                    Сумма заказа
+                </th>
+                <th>
+                    Статус
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @item.Id
+                </td>
+                <td>
+                    @item.Customer.Email
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Employee.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AcceptedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @item.OrderedProducts.Sum(o => o.Quantity)
+                </td>
+                <td>
+                    @{
+                        var summ = item.OrderedProducts.Sum(d => d.Product.Price * d.Quantity);
+                    }
+                    @summ
+                </td>
+                <td>
+                    @{
+                        var status = string.Empty;
+                    }
+
+                    @if(item.IsClosed)
+                    {
+                        status = "Обработан";
+                    }
+                    else
+                    {
+                        @if (!item.EmployeeId.HasValue)
+                        {
+                            status = "Сформирован";
+                        }
+                        else
+                        {
+                            status = "В работе";
+                        }
+                    }
+                    @status
+                </td>
+                <td>
+                    @{
+                        // Получение текущего адреса
+                        var request = ViewContext.HttpContext.Request;
+                        var returnUrl = request.Path +
+                        request.QueryString.ToUriComponent();
+                    }
+                    @if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+                    {
+
+                        @if (@status == "В работе")
+                        {
+                            <a asp-action="Close" asp-route-id="@item.Id" asp-route-returnUrl="@returnUrl" class="btn btn-sm btn-default text-info" title="Закрыть заказ"><i class="fa-solid fa-lock"></i></a>
+                        }
+                        else if (@status == "Обработан")
+                        {
+                            <a asp-action="Open" asp-route-id="@item.Id" asp-route-returnUrl="@returnUrl" class="btn btn-sm btn-default text-info" title="Открыть заказ"><i class="fa-solid fa-unlock"></i></a>
+                        }
+
+                        @if (!item.EmployeeId.HasValue)
+                        {
+                            <a asp-action="Accept" asp-controller="Orders" asp-route-id="@item.Id" asp-route-returnUrl="@returnUrl" class="btn btn-sm btn-success" title="Взять в работу"><i class="fa-solid fa-download"></i></a>
+                        }
+                    }
+                        
+                        <a asp-action="Details" asp-route-id="@item.Id" title="Просмотр" class="btn btn-sm btn-default"><i class="fa-solid fa-eye"></i></a>
+                    @if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+                    {
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger" title="Удалить"><i class="fa-solid fa-square-minus"></i></a>
+                    }
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+</div>
